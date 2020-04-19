@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/darker_gray">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/fbBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/login_fb"
+        android:drawableLeft="@drawable/facebook"
+        android:drawablePadding="10dp"
+        android:paddingLeft="70dp"
+        android:text="Facebook"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/nvBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_nv"
+        android:drawableLeft="@drawable/naver"
+        android:drawablePadding="10dp"
+        android:paddingLeft="70dp"
+        android:text="Naver"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fbBtn" />
+
+    <Button
+        android:id="@+id/ggBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_gg"
+        android:drawableLeft="@drawable/google"
+        android:drawablePadding="10dp"
+        android:paddingLeft="70dp"
+        android:text="Google"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nvBtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="C) 2020 team.diar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

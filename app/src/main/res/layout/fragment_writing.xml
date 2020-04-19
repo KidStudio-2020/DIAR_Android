@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WritingFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="월"
+            android:maxLength="2"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="일"
+        android:maxLength="2"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="170dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="요일"
+            android:maxLength="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="240dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="날씨" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="310dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="오늘의 나에게 하고싶은 한 마디는?" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="380dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:maxLength="10"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tiContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="450dp">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용" />
+    </android.support.design.widget.TextInputLayout>
+
+</FrameLayout>
