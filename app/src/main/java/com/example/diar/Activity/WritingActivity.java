@@ -1,7 +1,6 @@
-package com.example.diar;
+package com.example.diar.Activity;
 
 import android.Manifest;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,7 +14,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,6 +21,7 @@ import android.widget.Toast;
 import com.example.diar.Database.DBHelper;
 import com.example.diar.Database.LetterDB;
 import com.example.diar.Gps.GpsTracker;
+import com.example.diar.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

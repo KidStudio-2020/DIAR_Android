@@ -1,4 +1,4 @@
-package com.example.diar;
+package com.example.diar.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
