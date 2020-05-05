@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -32,10 +34,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.google.ar:core:1.16.0'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
     implementation 'com.android.support:design:28.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 apply plugin: 'com.google.ar.sceneform.plugin'
@@ -110,3 +116,6 @@ sceneform.asset('sampledata/models/TableTennisTable/Table tennis table.obj',
         'default',
         'sampledata/models/TableTennisTable/Table tennis table.sfa',
         'src/main/assets/Table tennis table')
+repositories {
+    mavenCentral()
+}
